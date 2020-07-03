@@ -31,6 +31,20 @@ class Events
     /**
      * @var string
      *
+     * @ORM\Column(name="image", type="string", length=255)
+     */
+    private $image;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="user_id", type="integer")
+     */
+    private $user_id;
+
+    /**
+     * @var string
+     *
      * @ORM\Column(name="describtion", type="text", nullable=true)
      */
     private $describtion;
